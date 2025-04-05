@@ -1,4 +1,24 @@
 {
   "name": "google-ad-ha",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-boop-cmd/Google-Ad-HA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-boop-cmd/Google-Ad-HA/issues"
+  },
+  "homepage": "https://github.com/Lucas-boop-cmd/Google-Ad-HA#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^5.1.0"
+  }
 }
