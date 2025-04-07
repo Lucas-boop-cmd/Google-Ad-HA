@@ -28,23 +28,37 @@
       padding: 80px 20px;
     }
     .hero h1 {
-      font-size: 2.8em;
+      font-size: 3.2em;
       margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .hero h1 .line {
+      display: block;
+    }
+    .hero h1 .highlight {
+      color: #007BFF;
     }
     .hero p {
       font-size: 1.2em;
       margin-bottom: 30px;
     }
-    .cta-btn {
-      background: #007BFF;
-      padding: 15px 30px;
-      color: #fff;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s ease;
+    
+    /* Mobile optimization */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5em;
+      }
+      .hero {
+        padding: 60px 15px;
+      }
     }
-    .cta-btn:hover {
-      background: #0056b3;
+    
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.2em;
+      }
     }
     /* FAQ Section */
     .faq {
@@ -140,8 +154,12 @@
   <!-- Hero Section -->
   <header class="hero">
     <div class="container">
-      <h1>Instantly Find Your Home Buying Power</h1>
-      <p>In less than 60 seconds – Banks don’t share all the options; our AI does. Find your home budget in 7 steps.</p>
+      <h1>
+        <span class="line">Instantly find your</span>
+        <span class="line highlight">Home buying power</span>
+        <span class="line">in less than 60 seconds</span>
+      </h1>
+      <p>Banks don't share all the options; our AI does. Find your home budget in 7 steps.</p>
       <a href="#calculate" class="cta-btn">Calculate your home budget now</a>
     </div>
   </header>
